@@ -53,7 +53,7 @@ public class guiGLM {
 
     private StringBuilder cipher(String k, String plainString) {
         int bias = Integer.parseInt(k);
-        if(plainString.isEmpty() || plainString == null) {
+        if(plainString.isEmpty()) {
             return new StringBuilder("");
         }
         else if(bias == 0) {
